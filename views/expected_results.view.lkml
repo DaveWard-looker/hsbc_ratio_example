@@ -15,7 +15,8 @@ view: expected_results {
             'nii_for_wpb' as metric_name,
             Sum(case when metric_id = 373  and business_group = 'WPB 'then Amount else 0 end) as amount
             FROM `daveward-ps-dev.daveward_demodataset.ratio_data` rd
-
+            where 1=1
+            and {% condition current_period %} EXTRACT(DATE FROM rd.period) {% endcondition %}
             union all
             SELECT
             310 as metric_id,
