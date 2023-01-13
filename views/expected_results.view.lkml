@@ -132,6 +132,11 @@ view: expected_results {
     sql: ${amount} ;;
   }
 
+  measure: max_amount {
+    type: max
+    sql: ${amount} ;;
+  }
+
   set: detail {
     fields: [metric_id, metric_name, amount]
   }
