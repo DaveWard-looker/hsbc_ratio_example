@@ -134,6 +134,11 @@ view: expected_results {
 
   measure: max_amount {
     type: max
+  sql: ${amount} ;;
+  }
+
+  measure: min_amount {
+    type: min
     sql: ${amount} ;;
   }
 
