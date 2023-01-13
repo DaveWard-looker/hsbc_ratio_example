@@ -142,6 +142,11 @@ view: expected_results {
     sql: ${amount} ;;
   }
 
+  measure: median_amount {
+    type: median
+    sql: ${amount} ;;
+  }
+
   set: detail {
     fields: [metric_id, metric_name, amount]
   }
