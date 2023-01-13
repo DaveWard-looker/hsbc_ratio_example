@@ -137,11 +137,6 @@ view: expected_results {
   sql: ${amount} ;;
   }
 
-  measure: min_amount {
-    type: min
-    sql: ${amount} ;;
-  }
-
   measure: median_amount {
     type: median
     sql: ${amount} ;;
