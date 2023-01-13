@@ -137,6 +137,11 @@ view: expected_results {
     sql: ${amount} ;;
   }
 
+  measure: min_amount {
+    type: min
+    sql: ${amount} ;;
+  }
+
   set: detail {
     fields: [metric_id, metric_name, amount]
   }
